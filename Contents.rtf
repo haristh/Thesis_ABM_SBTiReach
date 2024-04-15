@@ -1,0 +1,90 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 \ul \ulc0 Contents
+\fs24 \
+\
+Folders\
+
+\f1\b0 \ulnone 1. data_collected- All the data files collected through open exploration, sensitivity analysis and experimentation.\
+\
+2. files - All the data that was used for the input parameters. \
+	a. Culture map diagrams from Erin Meyer\'92s Culture Mapping tool\
+	b. StructuredData.xlsx - Main file of all the data\
+\
+3. report_images- All the images used in the report\'92s  open exploration, sensitivity analysis and report and experimentation.\
+\
+\
+
+\f0\b \ul Python Files
+\f1\b0 \ulnone \
+1. calibration_platypus_opt:\
+This files contains the code needed for the Parameter tuning. The most significant parameters are optimised based on the \
+% committed, % set target and average time between commitment and set target desired outcomes.
+\f0\b \ul \
+
+\f1\b0 \ulnone \
+2. CompanyAgent:\
+One of the two main files that represent ABM model alongside SBTiModel (both versions). \
+It was implemented based on the Conceptualisation and Formalisation chapter \
+\
+3.CompanyAgent_scenarios_set2:\
+One of the two main files that represent ABM model alongside SBTiModel (both versions). \
+It was implemented based on the Conceptualisation and Formalisation chapter.\
+\
+4. diagram_experiments - This file contains all the graphs and tables used in the Results and Experimentation Chapter.\
+\
+5. main_experiments:\
+This file runs the SBTi model once and presents its results. Used mainly for fast and easy \
+verification that model works as expected.\
+\
+6. main_scenarios_set2:\
+This file runs the SBTi model once and presents its results. Used mainly for fast and easy \
+verification that model works as expected. The extra part in this one is the failed companies data.\
+\
+\
+7. open_exploration:\
+This file includes the open exploration parts of the model. EMA Workbench library \
+is imported to use Patient Rule Induction Method (PRIM) and Feature Scoring. This is\
+discussed in Chapter 4: Verification, Sensitivity analysis and Parameter Setup.\
+\
+8. SBTiModel_main:\
+SBTi Model presents the overall model. There are two versions of this due to the changes made \
+to the code's mechanisms for the second set of scenarios. This is discussed in Experiments \
+and Results Chapter.\
+\
+\
+9. SBTiModel_scenarios_set2:\
+SBTi Model presents the overall model. There are two versions of this due to the changes made \
+to the code's mechanisms for the second set of scenarios. This is discussed in Experiments \
+and Results Chapter.\
+\
+10. scenarios_multiprocessing_base_scenario:\
+One of the three python files that focus on the experimentation of the thesis. \
+This one presents the base scenario i.e. before the campaigns are implemented in 2020.\
+The model is run for 60 steps with 2233 companies (total) 50 times and averages and stds \
+are calculated.  Multiprocessing was used to reduce the time taken.\
+\
+\
+11. scenarios_multiprocessing_scenarios_set1:\
+One of the three python files that focus on the experimentation of the thesis. \
+This one presents the first set of scenarios i.e. the scenarios influencingdirectly the\
+pressures by multiplying their values by factors of 5 and 10. The model runs from 2015 \
+until 2025 (108 steps) with 2233 companies (total) 50 times and averages and stds \
+are calculated.  Multiprocessing was used to reduce the time taken.\
+\
+12. scenarios_multiprocessing_scenarios_set2:\
+One of the three python files that focus on the experimentation of the thesis. \
+This one presents the second set of scenarios i.e. the scenarios that affect the model's \
+mechanisms. The model runs from 2015 until 2025 (108 steps) with 2233 companies (total) 50 times and averages and stds \
+are calculated.  Multiprocessing was used to reduce the time taken.\
+\
+\
+13. sensitivity_analysis_SOBOL:\
+This file includes the global sensitivity analysis parts of the model. EMA Workbench library \
+is imported to use SOBOL indices. This is discussed in Chapter 4: Verification, Sensitivity analysis and Parameter Setup.\
+}
